@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="head">
+    <ul>
+        <li class="liii">脚本之家</li>
+        <li>软件下载v</li>
+        <li>源码下载v</li>
+        <li>在线工具</li>
+        <li>网页基础教程</li>
+        <li>服务器常用软件</li>
+        <li>手机版</li>
+        <li><img src="wx.jpg">微信登陆</li>
+    </ul>
+</div>
+<div class="gg">
+    <img src="jbzj.jpg">
+    <img src="ja.jpg">
+    <img src="kyzg.jpg">
+</div>
+<div class="fy">
+    <ul>
+        <li>网页制作</li>
+        <li>网络编程</li>
+        <li>脚本专栏</li>
+        <li>脚本下载</li>
+        <li>数据库</li>
+        <li>CMS教程</li>
+        <li>电子书籍</li>
+        <li>平面设计</li>
+        <li>媒体动画</li>
+        <li>操作系统</li>
+        <li>网站运营</li>
+        <li>网络安全</li>
+        <li class="l1">在线手册</li>
+    </ul>
+</div>
+<div class="bottom_left">
+    <div class="title">
+        CSS清除浮动大全共8种方法
+    </div>
+    <div class="mader">
+        作者：佚名 字体：<span>[增加 减小]</span> 来源：互联网 时间：06-04 16:19:27 <span>我要评论</span>
+    </div>
+    <div class="a1">
+        在各种浏览器中显示效果也有可能不相同，这样让清除浮动更难了，下面总结8种清除浮动的方法，测试已通过 ie chrome firefox opera，需要的朋友可以参考下
+    </div>
+    <div class="ap">
+        <div class="ap1">
+            <div class="ap11">微信加人软件</div>
+            <div class="ap12">
+                <div class="ap13">手机定位追踪软件</div>
+                <div class="ap14">id解锁</div>
+            </div>
+            <div class="ap15">定位精确找人</div>
+            <div class="ap19">
+                <div class="ap16">在线客服</div>
+                <div class="ap17">捕鱼赚钱</div>
+            </div>
+            <div class="ap18">网站代理免费加盟</div>
+        </div>
+        <img class="ap2" src="a22.jpg">
+    </div>
+    <div class="a3">
+        清除浮动是每一个 web前台设计师必须掌握的机能。css清除浮动大全，共8种方法.<br>
+        浮动会使当前标签产生向上浮的效果，同时会影响到前后标签、父级标签的位置及 width height 属性。而且同样的代码，在各种浏览器中显示效果也有可能不相同，这样让清除浮动更难了。解决浮动引起的问题有多种方法，但有些方法在浏览器兼容性方面还有问题。<br>
+        下面总结8种清除浮动的方法（测试已通过 ie chrome firefox opera，后面三种方法只做了解就可以了）：<br>
+        1，父级div定义 height<br>
+    </div>
+    <div class="a4">
+        <div class="a41">
+            代码如下:<span><a href="if1.text" target="if1">显示代码</a></span>
+        </div>
+        <iframe class="if1" name="if1"></iframe>
+    </div>
+    <div class="a5">
+        原理：父级div手动定义height，就解决了父级div无法自动获取到高度的问题。<br>
+        优点：简单、代码少、容易掌握<br>
+        缺点：只适合高度固定的布局，要给出精确的高度，如果高度和父级div不一样时，会产生问题<br>
+        建议：不推荐使用，只建议高度固定的布局时使用<br>
+        2，结尾处加空div标签 clear:both
+    </div>
+    <div class="a6">
+        <div class="a61">
+            代码如下:<span><a href="if2.text" target="if2">显示代码</a></span>
+        </div>
+        <iframe class="if2" name="if2"></iframe>
+    </div>
+    <div class="a7">
+        原理：添加一个空div，利用css提高的clear:both清除浮动，让父级div能自动获取到高度<br>
+        优点：简单、代码少、浏览器支持好、不容易出现怪问题<br>
+        缺点：不少初学者不理解原理；如果页面浮动布局多，就要增加很多空div，让人感觉很不好<br>
+        建议：不推荐使用，但此方法是以前主要使用的一种清除浮动方法<br>
+        3，父级div定义 伪类:after 和 zoom
+    </div>
+    <div class="a8">
+        <div class="a81">
+            代码如下:<span><a href="if3.text" target="if3">显示代码</a></span>
+        </div>
+        <iframe class="if3" name="if3"></iframe>
+    </div>
+    <div class="a9">
+        原理：IE8以上和非IE浏览器才支持:after，原理和方法2有点类似，zoom(IE转有属性)可解决ie6,ie7浮动问题<br>
+        优点：浏览器支持好、不容易出现怪问题（目前：大型网站都有使用，如：腾迅，网易，新浪等等）<br>
+        缺点：代码多、不少初学者不理解原理，要两句代码结合使用才能让主流浏览器都支持。<br>
+        建议：推荐使用，建议定义公共类，以减少CSS代码。<br>
+        4，父级div定义 overflow:hidden
+    </div>
+    <div class="a10">
+        <div class="a101">
+            代码如下:<span><a href="if4.text" target="if4">显示代码</a></span>
+        </div>
+        <iframe class="if4" name="if4"></iframe>
+    </div>
+    <div class="a11">
+        原理：必须定义width或zoom:1，同时不能定义height，使用overflow:hidden时，浏览器会自动检查浮动区域的高度<br>
+        优点：简单、代码少、浏览器支持好<br>
+        缺点：不能和position配合使用，因为超出的尺寸的会被隐藏。<br>
+        建议：只推荐没有使用position或对overflow:hidden理解比较深的朋友使用。<br>
+        5，父级div定义 overflow:auto
+    </div>
+    <div class="a12">
+        <div class="a121">
+            代码如下:<span><a href="if5.text" target="if5">显示代码</a></span>
+        </div>
+        <iframe class="if5" name="if5"></iframe>
+    </div>
+    <div class="a13">
+        原理：必须定义width或zoom:1，同时不能定义height，使用overflow:auto时，浏览器会自动检查浮动区域的高度<br>
+        优点：简单、代码少、浏览器支持好<br>
+        缺点：内部宽高超过父级div时，会出现滚动条。<br>
+        建议：不推荐使用，如果你需要出现滚动条或者确保你的代码不会出现滚动条就使用吧。<br>
+        6，父级div 也一起浮动
+    </div>
+    <div class="a14">
+        <div class="a141">
+            代码如下:<span><a href="if6.text" target="if6">显示代码</a></span>
+        </div>
+        <iframe class="if6" name="if6"></iframe>
+    </div>
+    <div class="a15">
+        原理：所有代码一起浮动，就变成了一个整体<br>
+        优点：没有优点<br>
+        缺点：会产生新的浮动问题。<br>
+        建议：不推荐使用，只作了解。<br>
+        7，父级div定义 display:table
+    </div>
+    <div class="a16">
+        <div class="a161">
+            代码如下:<span><a href="if7.text" target="if7">显示代码</a></span>
+        </div>
+        <iframe class="if7" name="if7"></iframe>
+    </div>
+    <div class="a17">
+        原理：将div属性变成表格<br>
+        优点：没有优点<br>
+        缺点：会产生新的未知问题。<br>
+        建议：不推荐使用，只作了解。<br>
+        8，结尾处加 br标签 clear:both
+    </div>
+    <div class="a18">
+        <div class="a181">
+            代码如下:<span><a href="if8.text" target="if8">显示代码</a></span>
+        </div>
+        <iframe class="if8" name="if8"></iframe>
+    </div>
+    <div class="a19">
+        <div class="a192"><img class="a191" src="sj.jpg"><br>html5网页模版</div>
+        <div class="a192"><img class="a191" src="mb.jpg"><br>网页设计模版</div>
+        <div class="a192"><img class="a191" src="zz.jpg"><br>网站制作模版</div>
+        <div class="a192"><img class="a191" src="11.jpg"><br>响应式网站设计</div>
+        <div class="a192"><img class="a191" src="22.jpg"><br>个人网站制作</div>
+        <div class="a192"><img class="a191" src="33.jpg"><br>网站制作</div>
+    </div>
+    <div class="a20">
+        评论 （<span>0</span>人参与，<span>0</span>人评论）
+    </div>
+    <div class="a21">
+        <img class="a211" src="tx.jpg">
+        <div class="a212">
+            <input class="a213" type="text">
+            <div class="a214">
+                <img class="a215" src="xl.jpg">
+                <img class="a216" src="tp.jpg">
+                <button class="a217">发布</button>
+            </div>
+        </div>
+    </div>
+    <div class="a22">
+        <div class="a221">
+            <img src="wb.jpg"><span>微博登录</span>
+        </div>
+        <div class="a222">
+            <img src="qq.jpg"><span>QQ登录</span>
+        </div>
+        <div class="a223">
+            <img src="sjdl.jpg"><span>手机登录</span>
+        </div>
+    </div>
+</div>
+<div class="bottom_right">
+    <img class="i1" src="1.jpg">
+    <div class="wzfl">
+        <div class="wzfl1">文章分类</div>
+        <ul>
+            <li>CSS教程</li>
+            <li>DIV+CSS教程</li>
+            <li>浏览器兼容教程</li>
+        </ul>
+        <ul>
+            <li>css3</li>
+            <li>Web标准教程</li>
+            <li>CSS布局实例</li>
+        </ul>
+    </div>
+    <img class="i2" src="2.jpg">
+    <img class="i3" src="3.jpg">
+    <div class="djxh">
+        <span class="s1">大家感兴趣的内容</span><br>
+        <span class="s2">1 css控制UL LI 的样式详解(推荐)</span><br>
+        <span class="s2">2 HTML设置超链接字体颜色和点击后的字体颜色</span><br>
+        <span class="s2">3 div水平垂直居中的完美解决方案</span><br>
+        <span class="s2">4 CSS 漂亮搜索框美化代码</span><br>
+        <span class="s2">5 CSS 首行缩进两个文字</span><br>
+        <span class="s2">6 css 中的background:transparent到底是什么意思有什么</span><br>
+        <span class="s2">7 css textarea 高度自适应,无滚动条</span><br>
+        <span class="s2">8 CSS自定义select下拉选择框的样式(不用其他标签模拟)</span><br>
+        <span class="s2">9 css 设置全屏背景图片</span><br>
+        <span class="s2">10 css中float left与float right的使用说明</span>
+    </div>
+    <img class="i4" src="4.jpg">
+    <div class="zjgx">
+        <div class="gx">最近更新的内容</div>
+        <ul>
+            <li>CSS制作箭头图标代码(圆，三角形，椭圆)</li>
+            <li>深入剖析CSS弹性盒模型flex</li>
+            <li>CSS display属性的table表格布局</li>
+            <li>你应该知道的3个CSS技巧</li>
+            <li>主流浏览器css兼容问题汇总</li>
+            <li>css制作黑色经典导航下拉菜单</li>
+            <li>深入理解CSS选择器优先级</li>
+            <li>CSS利用伪元素实现导航栏斜线分隔</li>
+            <li>你值得拥有的CSS下拉菜单效果</li>
+            <li>css实现移动端图片文字水平居中</li>
+        </ul>
+    </div>
+    <div class="img_1">
+        <div class="img_1_top">
+            <div class="l">
+                <img src="mb.jpg"><br>
+                网站制作模版
+            </div>
+            <div class="r">
+                <img src="html5.jpg"><br>
+                html5网站
+            </div>
+        </div>
+        <div class="img_1_bottom">
+            <div class="l">
+                <img src="sj.jpg"><br>
+                网页设计
+            </div>
+            <div class="r">
+                <img src="zz.jpg"><br>
+                网页制作
+            </div>
+        </div>
+    </div>
+    <img class="i5" src="5.jpg">
+    <div class="img_1">
+        <div class="img_1_top">
+            <div class="l">
+                <img src="11.jpg"><br>
+                个人网站制作
+            </div>
+            <div class="r">
+                <img src="22.jpg"><br>
+                html5游戏
+            </div>
+        </div>
+        <div class="img_1_bottom">
+            <div class="l">
+                <img src="33.jpg"><br>
+                响应式网页设计
+            </div>
+            <div class="r">
+                <img src="44.jpg"><br>
+                css网页设计
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
